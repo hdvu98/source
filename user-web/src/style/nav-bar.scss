@@ -1,0 +1,41 @@
+
+#navbar{
+    background: $color-blue-light;
+    color: $color-white !important;
+    padding: 0.5rem 0;
+    .logo{
+        max-height: 50px;
+        width: auto;
+    }
+    .navbar-brand{
+        color: $color-white;
+        .brand-text{
+            padding-left: 0.5rem;
+            font-weight: 600;
+        }
+    }
+    .nav-link{
+        color: $color-white !important;
+        padding: 0.5rem 0.5rem
+    }
+    .profile-dropdown{
+        border: none;
+        background: none;
+        padding:0 1rem;
+        font-weight: bold;
+    }
+    .my-btn{
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        color: $color-blue-dark;
+        background: $color-white;
+        text-decoration: none;
+        font-weight: bold;
+        border: none;
+        &:hover{
+            color: $color-white;
+            background: $color-blue-dark;
+            text-decoration: none;
+        }
+    }
+}

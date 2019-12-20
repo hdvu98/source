@@ -1,0 +1,53 @@
+@import './colors/';
+@import './nav-bar.scss';
+@import './scroll-btn.scss';
+@import './profile.scss';
+@import './tutors.scss';
+body{
+    font-size: 16px !important;
+    font-family: 'Montserrat', sans-serif;
+}
+#sign-in,#sign-up,#choose-user-type,#profile, #home,#profile{
+    padding: 1rem 0;
+    margin-top: 76px;
+    min-height: calc(100vh - 76px);
+}
+#choose-user-type{
+    background-image: url('../assets/img/background.jpg');
+    background-repeat: 'no-repeat';
+    background-size: 'cover';
+    background-position: 'center';
+}
+.my-btn{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: $color-white;
+    background: $color-blue-light;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    &:hover{
+        color: $color-white;
+        background: $color-blue-dark;
+        text-decoration: none;
+    }
+}
+.login-social-media{
+    padding: 1rem 0;
+    .btn-google{
+        background: $color-google ;
+        color:$color-white;
+        border-radius: 0;
+    }
+    .btn-facebook{
+        background: $color-facebook;
+        color:$color-white;
+    }
+    .icon{
+        width: 2rem;
+    }
+}
+.spinner-cover{
+    width: 100vw;
+    height: 100vh;
+}

@@ -1,0 +1,57 @@
+.scroll-btn{
+    height: 3rem;
+    width: 3rem;
+    background: $color-blue-dark;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    .up-arrow{
+        color: #fff;
+        font-size: 1.5rem;
+        padding-top: 0.7rem;
+    }
+    &:hover{
+        background:$color-facebook;
+    }
+    bottom: 4rem;
+    right: 3rem;
+    
+}
+.appear{
+    display: block;
+    -webkit-animation-name: scrollToAppear; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: scrollToAppear;
+    animation-duration: 1s;
+}
+.disapear{
+  display: none;
+    -webkit-animation-name: scrollToDisappear; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: scrollToDisappear;
+    animation-duration: 1s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes scrollToAppear {
+    0%   {opacity: 0%; bottom:1rem; right: 3rem;}
+    100%   {opacity: 100%; bottom:4rem; right: 3rem;}
+  }
+  
+  /* Standard syntax */
+  @keyframes scrollToAppear {
+    0%   {opacity: 0%; bottom:1rem; right: 3rem;}
+    100%   {opacity: 100%; bottom:4rem; right: 3rem;}
+  }
+  @-webkit-keyframes scrollToDisappear {
+    0%   {opacity: 100%; bottom:4rem; right: 3rem;}
+    100%   {opacity: 0%; bottom:1rem; right: 3rem;}
+  }
+  
+  /* Standard syntax */
+  @keyframes scrollToDisappear {
+    0%   {opacity: 100%; bottom:4rem; right: 3rem;}
+    100%   {opacity: 0%; bottom:1rem; right: 3rem;}
+  }
